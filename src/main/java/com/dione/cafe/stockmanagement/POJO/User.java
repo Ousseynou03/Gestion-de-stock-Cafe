@@ -8,6 +8,8 @@ import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 
+@NamedQuery(name = "User.findEmailById", query = "select u from User u where u.email=:email")
+
 @DynamicUpdate
 @DynamicInsert
 @Data

@@ -16,6 +16,7 @@ public class UserRestImpl implements UserRest {
 
     @Autowired
     UserService userService;
+
     @Override
     public ResponseEntity<String> signUp(Map<String, String> requestMap) {
         try {
