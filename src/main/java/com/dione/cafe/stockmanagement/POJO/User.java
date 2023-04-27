@@ -7,6 +7,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 @NamedQuery(name = "User.findEmailById", query = "select u from User u where u.email=:email")
 
