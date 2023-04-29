@@ -37,6 +37,7 @@ public class CustomerUsersDetailsService implements UserDetailsService {
     }
 
     public com.dione.cafe.stockmanagement.POJO.User getUserDetail(){
+
         return userDetail;
     }
 }
