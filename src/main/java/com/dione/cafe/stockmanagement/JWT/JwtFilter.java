@@ -19,8 +19,6 @@ import java.io.IOException;
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 
-    //Nous allons effectuer ici la validation du Token
-
     private final JwtUtil jwtUtil;
 
     private final CustomerUsersDetailsService customerUsersDetailsService;

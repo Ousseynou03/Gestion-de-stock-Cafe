@@ -1,13 +1,16 @@
 package com.dione.cafe.stockmanagement.service;
 
+import com.dione.cafe.stockmanagement.wrapper.UserWrapper;
 import org.springframework.http.ResponseEntity;
 
+import java.util.List;
 import java.util.Map;
 
 public interface UserService {
 
-    public ResponseEntity<String> signUp(Map<String, String> requestMap);
+    ResponseEntity<String> signUp(Map<String, String> requestMap);
+    ResponseEntity<String> login(Map<String, String> requestMap);
+    ResponseEntity<List<UserWrapper>> getAllUser();
 
-    public ResponseEntity<String> login(Map<String, String> requestMap);
-
+    ResponseEntity<String> update(Map<String, String> requestMap);
 }
